@@ -4,15 +4,14 @@ import java.util.List;
 class Java8Example{
 
 
-/*
+
 
    //static
     void printElement(int i){
 
       System.out.println(i);
-        Java8Example
+    
    }
-*/
 
 
     public static void main(String[] arg){
