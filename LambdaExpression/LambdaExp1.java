@@ -2,7 +2,7 @@
 
      abstract void  print(int x);
 
-   default void normalMsg(){
+    default void normalMsg(){
         System.out.println("Hello Welcome");
       }
 
@@ -14,6 +14,10 @@ class LambdaExp1 {
      DemoFunctionInterface   f =  (x ) -> System.out.println(x);
 
      f.print(100);
+
+     //void comparator();
+
+
       
   }
 }
