@@ -1,4 +1,6 @@
- interface  DemoFunctionInterface{
+package LambdaExpression;
+
+interface  DemoFunctionInterface{
 
      abstract void  print(int x);
 
@@ -17,7 +19,5 @@ class LambdaExp1 {
 
      //void comparator();
 
-
-      
   }
 }

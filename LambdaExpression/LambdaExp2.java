@@ -1,4 +1,6 @@
-import java.util.*; 
+package LambdaExpression;
+
+import java.util.*;
 
   class LambdaExp2{
 
