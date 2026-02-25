@@ -20,8 +20,6 @@ public class LambdaExp4 {
 
         System.out.println(result);
     }
-
-
 }
 
 
