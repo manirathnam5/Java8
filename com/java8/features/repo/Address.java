@@ -6,7 +6,7 @@ public class Address {
 
     int pincode;
 
-    public Address(String block , String city , String state , String country){
+    public Address(String block , String city , String state , String country ,int pincode){
         super();
         this.block = block;
         this.city = city;

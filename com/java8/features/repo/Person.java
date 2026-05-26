@@ -18,6 +18,8 @@ public class Person {
 
     List<String> hobbies = new ArrayList<>();
 
+
+
     Optional<Address> address;
 
 
@@ -25,14 +27,14 @@ public class Person {
         super();
     }
 
-    public Person(String name, int height, double salary, String gender, int kids, List<String> hobbies, Optional<Address> address) {
+    public Person(String name, int height, double salary, String gender, int kids, List<String> hobbies) {
         this.name = name;
         this.height = height;
         this.salary = salary;
         this.gender = gender;
         this.kids = kids;
         this.hobbies = hobbies;
-        this.address = address;
+        //this.address = address;
     }
 
     public String getName() {
@@ -81,10 +83,6 @@ public class Person {
 
     public void setHobbies(List<String> hobbies) {
         this.hobbies = hobbies;
-    }
-
-    public Optional<Address> getAddress() {
-        return address;
     }
 
     public void setAddress(Optional<Address> address) {
