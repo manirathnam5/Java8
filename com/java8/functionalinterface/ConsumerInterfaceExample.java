@@ -18,15 +18,16 @@ public class ConsumerInterfaceExample {
 
     public static void main(String[] arg) {
 
-        /*Consumer<String> c1 = s -> System.out.println(s + 10);
+       // example for String type
 
+        Consumer<String> c1 = s -> System.out.println(s + 10);
         Consumer<String> c2 = s -> System.out.println(s.toUpperCase());
-
         c1.andThen(c2).accept("manish");
-*/
-        List<Person>  personList = PersonRepository.getAllPersons();
 
-        //personList.forEach(c3.andThen(c4));
+        //example for Person type data
+
+        System.out.println("Person data ... ");
+        List<Person>  personList = PersonRepository.getAllPersons();
 
         personList.forEach(c4);
 
