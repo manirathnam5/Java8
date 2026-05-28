@@ -1,4 +1,4 @@
-package com.java8.functionalinterface;
+package com.java8.BiConsumerfunctionalinterface;
 
 import com.java8.features.repo.Person;
 import com.java8.features.repo.PersonRepository;

@@ -1,4 +1,4 @@
-package com.java8.functionalinterface;
+package com.java8.BiConsumerfunctionalinterface;
 
 import java.util.Arrays;
 import java.util.List;
@@ -29,7 +29,6 @@ public class BiconsumerInterfaceExample2 {
          };
 
         c.accept(list1,list2);
-
 
     }
 }

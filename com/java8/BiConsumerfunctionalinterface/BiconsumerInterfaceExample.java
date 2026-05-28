@@ -1,4 +1,4 @@
-package com.java8.functionalinterface;
+package com.java8.BiConsumerfunctionalinterface;
 
 import com.java8.features.repo.Person;
 import com.java8.features.repo.PersonRepository;
@@ -6,7 +6,6 @@ import com.java8.features.repo.PersonRepository;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Arrays;
-import java.util.Date;
 import java.util.List;
 import java.util.function.BiConsumer;
 
@@ -39,6 +38,7 @@ public class BiconsumerInterfaceExample {
         List<Person> personList = PersonRepository.getAllPersons();
 
         c.accept(LocalTime.now(), personList);
+
 
 
     }
