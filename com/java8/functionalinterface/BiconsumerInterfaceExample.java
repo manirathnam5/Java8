@@ -18,7 +18,7 @@ public class BiconsumerInterfaceExample {
 
         BiConsumer<Integer, Integer> consumer = (x, y) -> System.out.println(x + y);
 
-        BiConsumer<String, String> consumer1 = (a, b) -> System.out.println(a + "     -->  " + b);
+        BiConsumer<String, String>   consumer1 = (a, b) -> System.out.println(a + "     -->  " + b);
 
         BiConsumer<LocalDate, Person> consumer2 = (a, b) -> System.out.println(a + "  -->  " + b);
 
@@ -39,6 +39,7 @@ public class BiconsumerInterfaceExample {
         List<Person> personList = PersonRepository.getAllPersons();
 
         c.accept(LocalTime.now(), personList);
+
 
     }
 }
