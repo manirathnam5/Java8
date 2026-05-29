@@ -20,8 +20,6 @@ public class StreamMapExample2 {
                 .map((s2))
                 // .map(s -> s.toUpperCase())
                 .collect(Collectors.toList());
-
         System.out.println(s1);
-
     }
 }
