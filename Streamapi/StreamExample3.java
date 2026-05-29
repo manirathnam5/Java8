@@ -13,8 +13,8 @@ public class StreamExample3 {
 
     public static void main(String[] arg) {
 
-        Predicate<Person>  heightPredicate = (person -> person.getHeight() > 140 );
-        Predicate<Person>  genderPredicate = (person -> person.getGender().equals("Female"));
+        Predicate<Person> heightPredicate = (person -> person.getHeight() > 140);
+        Predicate<Person> genderPredicate = (person -> person.getGender().equals("Female"));
 
         /*
         Stream<Integer>  stream = Stream.of(1,4,5,6,7) ;
@@ -33,6 +33,14 @@ public class StreamExample3 {
 
         System.out.println(map);
 
+        List<String> personHobbies = PersonRepository.getAllPersons()
+                .stream()
+                .map(Person::getHobbies)
+                .flatMap((l) -> l.stream())
+                .distinct()
+                .collect(Collectors.toList());
+
+        System.out.println(personHobbies);
 
 
     }
