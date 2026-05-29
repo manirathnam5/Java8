@@ -16,7 +16,6 @@ public class StreamExample3 {
         Predicate<Person>  heightPredicate = (person -> person.getHeight() > 140 );
         Predicate<Person>  genderPredicate = (person -> person.getGender().equals("Female"));
 
-
         /*
         Stream<Integer>  stream = Stream.of(1,4,5,6,7) ;
         stream.forEach(System.out::println);
@@ -26,12 +25,14 @@ public class StreamExample3 {
         stream1.forEach(System.out::println);
        */
 
+
         Map<String, List<String>> map = PersonRepository.getAllPersons()
                 .stream()
                 .filter(heightPredicate.and(genderPredicate))
                 .collect(Collectors.toMap(Person::getName, Person::getHobbies));
 
         System.out.println(map);
+
 
 
     }
