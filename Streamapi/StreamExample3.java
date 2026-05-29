@@ -28,8 +28,7 @@ public class StreamExample3 {
 
         Map<String, List<String>> map = PersonRepository.getAllPersons()
                 .stream()
-                .filter(heightPredicate)
-                .filter(genderPredicate)
+                .filter(heightPredicate.and(genderPredicate))
                 .collect(Collectors.toMap(Person::getName, Person::getHobbies));
 
         System.out.println(map);
