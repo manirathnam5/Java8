@@ -28,10 +28,20 @@ public class StreamFlatMapExample2 {
     }
 
 
+    static Long countOfHobbies(List<Person> personList) {
+
+        return personList.stream()
+                .map(personList1 -> personList1.getHobbies())
+                .flatMap(hobbiesList -> hobbiesList.stream())
+                //.distinct()
+                .count();
+
+    }
 
     public static void main(String[] arg) {
 
         System.out.println(showHobbies(PersonRepository.getAllPersons()));
         System.out.println(distinctHobbies(PersonRepository.getAllPersons()));
+        System.out.println(countOfHobbies(PersonRepository.getAllPersons()));
     }
 }
