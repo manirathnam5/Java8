@@ -35,7 +35,6 @@ public class StreamMinMaxExample {
         return personList;
     }
 
-
     public static void main(String[] arg) {
 
 
