@@ -38,11 +38,11 @@ public class OptionalExample1 {
 
         name = Optional.empty();
 
-        //System.out.println("Role " + name.get());
+        System.out.println("Role " + name.get());
 
-        //System.out.println("name " + (name.isPresent() ? name.get() : "No such record found "));
+        System.out.println("name " + (name.isPresent() ? name.get() : "No such record found "));
 
-        //System.out.println(getPerson(new Person()));
+        System.out.println(getPerson(new Person()));
 
         System.out.println(getPersonOptional(PersonRepository.getPersonOptional()));
 
