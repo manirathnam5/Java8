@@ -34,9 +34,7 @@ public class OptionalExample3 {
     public static void main(String[] arg) {
 
         orElse();
-
         orElseGet();
-
         orElseThrow();
 
     }
