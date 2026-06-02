@@ -22,8 +22,8 @@ public class StreamFilterExample1 {
 
         List<String> names2 = Arrays.asList("Sam", "Anderson", "Peter", "Nancy");
         /*Stream<String> s1 =*/
-        names2.stream().filter(s -> s.length() > 3)
-                .forEach((s) -> System.out.println(s));
+                   names2.stream().filter(s -> s.length() > 3)
+                  .forEach((s) -> System.out.println(s));
 
     }
 }
