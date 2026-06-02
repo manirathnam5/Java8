@@ -11,9 +11,9 @@ public class SupplierInterfaceExample1 {
 
     private static Supplier<List<Person>> supplier1 = () -> PersonRepository.getAllPersons();
 
-    private static Supplier<Person> supplier2 = () -> PersonRepository.getPerson();
+    private static Supplier<Person>      supplier2 = () -> PersonRepository.getPerson();
 
-    static Supplier<List<Integer>> supplier3 = () -> Arrays.asList(2, 4, 5);
+    static  Supplier<List<Integer>>      supplier3 = () -> Arrays.asList(2, 4, 5);
 
 
     public static void main(String[] arg) {
