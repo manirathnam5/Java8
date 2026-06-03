@@ -10,10 +10,10 @@ public class PersonRepository {
     public static List<Person> getAllPersons() {
 
         Person p1 = new Person("John", 165, 2000, "Male", 2, Arrays.asList("Cricket", "Swimming", "Tennis"));
-        Person p2 = new Person("Michael", 243, 40000, "Male", 2, Arrays.asList("Carrom", "Chess", "Gull[y cricket"));
+        Person p2 = new Person("Michael", 243, 40000, "Male", 2, Arrays.asList("Carrom", "Chess", "Gully cricket"));
         Person p3 = new Person("Dean", 140, 5700, "Male", 2, Arrays.asList("Cricket", "Driving", "Tennis"));
         Person p4 = new Person("Nancy", 130, 4900, "Female", 2, Arrays.asList("Cricket", "Swimming", "Tennis"));
-        Person p5 = new Person("Harper", 125, 9000, "Female", 2, Arrays.asList("Football", "Swimming", "Tennis"));
+        Person p5 = new Person("Harper", 145, 9000, "Female", 2, Arrays.asList("Football", "Swimming", "Tennis"));
         Person p6 = new Person("Alan", 110, 9500, "Male", 2, Arrays.asList("Cricket", "Swimming", "Tennis"));
         Person p7 = new Person("Campell", 165, 1548, "Male", 1, Arrays.asList("Swimming", "Tennis"));
 
@@ -30,7 +30,5 @@ public class PersonRepository {
         per.setAddress(Optional.of(new Address("7 th Block", "Ashburn", "Virginia", "USA", 20047)));
         return Optional.of(per);
     }
-
-
 
 }
