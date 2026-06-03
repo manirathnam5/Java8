@@ -88,4 +88,11 @@ public class Person {
     public void setAddress(Optional<Address> address) {
         this.address = address;
     }
+
+    @Override
+    public String toString() {
+        return "Person [name=" + name + ", height=" + height + ", salary=" + salary + ", gender=" + gender + ", kids="
+                + kids + ", hobbies=" + hobbies + "]";
+    }
+
 }
