@@ -23,7 +23,8 @@ public class LambdaExp4 {
 }
 
 
-interface Calculator {
+ interface Calculator {
 
     int operate(int a, int b);
-}
+
+ }
