@@ -14,7 +14,6 @@ public class StreamAnyAllMatchExample {
 
     static Predicate<Person> height = ((var person )-> person.getHeight() > 140);
 
-
     public static void main(String[] arg) {
 
         List<String> fruits = Arrays.asList("Banana", "Pineapple", "Orange", "Kiwi");
@@ -31,7 +30,6 @@ public class StreamAnyAllMatchExample {
         Boolean anyMatch = PersonRepository.getAllPersons()
                 .stream()
                 .anyMatch(height);
-
         System.out.println(" anyMatch " + anyMatch);
 
     }
