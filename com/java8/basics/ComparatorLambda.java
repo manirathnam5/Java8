@@ -16,7 +16,6 @@ public class ComparatorLambda {
         };
 
         //System.out.println(comparator.compare(60,49));
-
         //after java8
 
         Comparator<Integer>  comparator1 = (o1, o2) -> o1.compareTo(o2);
