@@ -23,6 +23,7 @@ public class LambdaExample5 {
         Addition obj = (i , j)-> System.out.println("addition of two numbers : "+( i+j));
 
         obj.add(5,4);
+        obj.add(10,5);
     }
 
 }
