@@ -6,13 +6,13 @@ package LambdaExpression;
    }
 
 
-   class DemoAdd implements Addition{
+   /*class DemoAdd implements Addition{
 
        @Override
        public void add(int i, int j) {
            System.out.println("Addition of two numbers "+(i+j));
        }
-   }
+   }*/
 
 
 public class LambdaExample5 {
