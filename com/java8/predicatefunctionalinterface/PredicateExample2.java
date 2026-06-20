@@ -12,7 +12,6 @@ import java.util.function.Predicate;
 public class PredicateExample2 {
 
     private static Predicate<Person> salaryPredicate = (person) -> person.getSalary() > 3000;
-
     private static Predicate<Person> genderPredicate = (person) -> (person.getGender().equalsIgnoreCase("Male"));
 
     public static void main(String[] arg) {
